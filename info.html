@@ -13,8 +13,8 @@
        <nav>
         <ul>
         <li> <a href="index.html">Home</a></li>
-       <li> <a href="basics.html">Invoices</a></li>
-       <li><a href="info.html">Connect with Us</a></li>
+       <li> <a href="basics.html">Services</a></li>
+       <li><a href="info.html">Quote</a></li> 
         </ul>
        </nav>
        <div id="wrapper">
@@ -22,12 +22,11 @@
        
        <main>
        
-        <h2>Stay Connected With Us</h2>
-        <h3>Contact Information:</h3>
+        <h2>~ Get a Services Price Quote ~</h2>
+        <h3>Client Information:</h3>
         <p>Required fields are marked with an asterisk*</p>
-        <form action=" https://local.nixle.com/johnson-county-sheriffs-office/" method="post"> 
+        <form action=" https://www.logstolumberindy.com/" method="post"> 
 
-            <!-- This website will need to be changed or removed  -->
 
             <label for="firstName">*First Name: </label>
             <input type="text" name="firstName" id="myfirstName" required="required"></input>
@@ -44,10 +43,13 @@
             <label for="address">Mailing Address: </label>
             <input type="text" name="address" id="address" required="required"></input>
 
+            <label for="service">*Service: </label>
+            <input type="service" name="service" id="myservice" required="required"></input>
+
             <br> 
 
             <fieldset>
-                <legend>Do You Want Text/Email Updates:</legend>
+                <legend>How would you prefer to be contacted: </legend>
               
                 <div>
                   <input type="checkbox" id="text" name="text" />
@@ -73,12 +75,12 @@
             <script>
                 function promptQ() {
                     var string; 
-                    string = prompt('Please type "Submit" to send your information to Johnson County Sheriff Department: ');
+                    string = prompt('Please type "Submit" to send your information to our Lumber Business: ');
                     if (string != "Submit") {
                         alert("Please try again - information not submitted");
                     }
                     else {
-                        alert("Thank you for sending your information - you will now get alerts from the Johnson County Sheriff Department");
+                        alert("Thank you for sending your information - we will get back to you ASAP!");
                     }
                 }
             </script>
